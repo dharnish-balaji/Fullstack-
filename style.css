@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+body{
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.clock-container{
+    border: 5px solid #2796f7;
+    padding: 3rem;
+    border-radius: 3px;
+    width: 450px;
+    text-align: center;
+}
+.time-display{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+.controls{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+select{
+    padding: 0.8rem 1rem;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+select:hover{
+    background: rgba(255,255, 255, 0.2);
+}
+select:disabled{
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+button{
+    width: 100%;
+    padding: 1.2rem;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg,#4ecca3,#45b7d1);
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(78, 204,163,0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+
+}
+button:hover{
+    background: linear-gradient(135deg,#45b7d1,#4ecca3);
+    box-shadow: 0 10px 25px rgba(78, 204, 163, 0.5);
+    transform: translateY(-2px);
+}
+button:active{
+    transform: translateY(0);
+    box-shadow: 0 5px 15px rgba(78, 204,163,0.3);
+}
